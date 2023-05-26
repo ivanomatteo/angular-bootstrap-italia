@@ -12,7 +12,7 @@ import { BiFormExampleComponent } from './cmp/bi-form-example/bi-form-example.co
 import { BiHeaderDefaultComponent } from './cmp/bi-header-default/bi-header-default.component';
 import { BiFooterComponent } from './cmp/bi-footer/bi-footer.component';
 import { BiLayoutComponent } from './cmp/bi-layout/bi-layout.component';
-import { HomeComponent } from './cmp/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
