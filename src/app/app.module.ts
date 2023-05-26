@@ -10,6 +10,9 @@ import { NgbtToastExampleComponent } from './cmp/ngbt-toast-example/ngbt-toast-e
 import { NgbtToastContainerComponent } from './cmp/ngbt-toast-container/ngbt-toast-container.component';
 import { BiFormExampleComponent } from './cmp/bi-form-example/bi-form-example.component';
 import { BiHeaderDefaultComponent } from './cmp/bi-header-default/bi-header-default.component';
+import { BiFooterComponent } from './cmp/bi-footer/bi-footer.component';
+import { BiLayoutComponent } from './cmp/bi-layout/bi-layout.component';
+import { HomeComponent } from './cmp/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { BiHeaderDefaultComponent } from './cmp/bi-header-default/bi-header-defa
     NgbtToastExampleComponent,
     NgbtToastContainerComponent,
     BiFormExampleComponent,
-    BiHeaderDefaultComponent
+    BiHeaderDefaultComponent,
+    BiFooterComponent,
+    BiLayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

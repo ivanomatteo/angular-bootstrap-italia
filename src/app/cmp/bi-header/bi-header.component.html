@@ -12,14 +12,15 @@
                         <!-- ENTE MENU -->
                         <div class="nav-mobile">
                             <nav aria-label="Navigazione secondaria">
-                                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button"
-                                    aria-expanded="false" aria-controls="menuC1">
+                                <a (click)="enteMenuVisible = !enteMenuVisible" class="it-opener d-lg-none"
+                                    [ngClass]="{collapsed:!enteMenuVisible,'focus--mouse':true}" href="#"
+                                    role="button" [attr.aria-expanded]="enteMenuVisible" aria-controls="menuC1">
                                     <span>Ente appartenenza</span>
                                     <svg class="icon" aria-hidden="true">
                                         <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
                                     </svg>
                                 </a>
-                                <div class="link-list-wrapper collapse" id="menuC1">
+                                <div class="link-list-wrapper collapse" [ngClass]="{show:enteMenuVisible}"  id="menuC1">
                                     <ul class="link-list">
                                         <li><a class="dropdown-item list-item" href="#">Link 1</a></li>
                                         <li><a class="list-item active" href="#" aria-current="page">Link 2 (Attivo)</a>
@@ -149,9 +150,8 @@
 
                             <!-- MOBILE BURGER TOGGLE BUTTON -->
                             <button (click)="sideMenuVisible=!sideMenuVisible" class="custom-navbar-toggler"
-                                type="button" aria-controls="navC1" aria-expanded="false"
-                                aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible"
-                                data-bs-target="#navC1">
+                                type="button" aria-controls="navC1" [attr.aria-expanded]="sideMenuVisible"
+                                aria-label="Mostra/Nascondi la navigazione">
                                 <svg class="icon">
                                     <use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
                                 </svg>
@@ -196,7 +196,7 @@
 
                                         <li class="nav-item dropdown" ngbDropdown>
                                             <a class="nav-link dropdown-toggle" ngbDropdownToggle href="#"
-                                                data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdownC1">
+                                                aria-expanded="false" id="mainNavDropdownC1">
                                                 <span>Menu Dropdown</span>
                                                 <svg class="icon icon-xs">
                                                     <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
@@ -236,7 +236,7 @@
 
                                         <li class="nav-item dropdown megamenu" ngbDropdown>
                                             <a class="nav-link dropdown-toggle" ngbDropdownToggle href="#"
-                                                data-bs-toggle="dropdown" aria-expanded="false" id="mainNavMegamenuC1">
+                                                aria-expanded="false" id="mainNavMegamenuC1">
                                                 <span>Megamenu</span>
                                                 <svg class="icon icon-xs">
                                                     <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
