@@ -1,6 +1,12 @@
 @import './bootstrap-italia-fonts';
 @import 'bootstrap-italia/src/scss/bootstrap-italia';
+
+/*
+ fix per difetti negli input (es. bordo arancione quando hanno il focus)
+ che si presentano quando non si include la parte javascript di bootstrap italia
+*/ 
 @import './bootstrap-italia-fix';
+
 
 body {
     font-family: "Titillium Web", Geneva, Tahoma, sans-serif;

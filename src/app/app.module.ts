@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { NgbModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { BiHeaderComponent } from './cmp/bi-header/bi-header.component';
 import { NgbtShowcaseComponent } from './cmp/ngbt-showcase/ngbt-showcase.component';
-import { ToastGlobalComponent } from './cmp/toast-global/toast-global.component';
-import { ToastContainerComponent } from './cmp/toast-container/toast-container.component';
+import { NgbtToastExampleComponent } from './cmp/ngbt-toast-example/ngbt-toast-example.component';
+import { NgbtToastContainerComponent } from './cmp/ngbt-toast-container/ngbt-toast-container.component';
+import { BiFormExampleComponent } from './cmp/bi-form-example/bi-form-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BiHeaderComponent,
     NgbtShowcaseComponent,
-    ToastGlobalComponent,
-    ToastContainerComponent
+    NgbtToastExampleComponent,
+    NgbtToastContainerComponent,
+    BiFormExampleComponent
   ],
   imports: [
     BrowserModule,
