@@ -9,6 +9,7 @@ import { NgbtShowcaseComponent } from './cmp/ngbt-showcase/ngbt-showcase.compone
 import { NgbtToastExampleComponent } from './cmp/ngbt-toast-example/ngbt-toast-example.component';
 import { NgbtToastContainerComponent } from './cmp/ngbt-toast-container/ngbt-toast-container.component';
 import { BiFormExampleComponent } from './cmp/bi-form-example/bi-form-example.component';
+import { BiHeaderDefaultComponent } from './cmp/bi-header-default/bi-header-default.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BiFormExampleComponent } from './cmp/bi-form-example/bi-form-example.co
     NgbtShowcaseComponent,
     NgbtToastExampleComponent,
     NgbtToastContainerComponent,
-    BiFormExampleComponent
+    BiFormExampleComponent,
+    BiHeaderDefaultComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bi-form-example.component.scss']
 })
 export class BiFormExampleComponent {
-
+  passwordVisible = false;
 }
