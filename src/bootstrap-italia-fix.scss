@@ -1,0 +1,43 @@
+a {
+  &.mat-button,
+  &.mat-raised-button,
+  &.mat-fab,
+  &.mat-mini-fab,
+  &.mat-list-item {
+    &:hover {
+      color: currentColor;
+    }
+  }
+}
+
+input[type="date"].mat-input-element,
+input[type="datetime-local"].mat-input-element,
+input[type="email"].mat-input-element,
+input[type="number"].mat-input-element,
+input[type="password"].mat-input-element,
+input[type="search"].mat-input-element,
+input[type="tel"].mat-input-element,
+input[type="text"].mat-input-element,
+input[type="time"].mat-input-element,
+input[type="url"].mat-input-element,
+textarea.mat-input-element {
+  border-bottom: initial;
+  padding: initial;
+  height: initial;
+  font-weight: initial;
+  transition: initial;
+  box-shadow: initial;
+  width: initial;
+  outline: initial;
+  border: initial;
+  border-radius: initial;
+}
+
+.form-check [type="checkbox"]:focus + label,
+.form-check [type="radio"]:focus + label,
+.toggles label input[type="checkbox"]:focus + .lever,
+:focus:not(.focus--mouse):not([data-focus-mouse="true"]) {
+  border-color: initial !important;
+  box-shadow: initial !important;
+  outline: initial !important;
+}
