@@ -13,6 +13,7 @@ import { BiHeaderDefaultComponent } from './cmp/bi-header-default/bi-header-defa
 import { BiFooterComponent } from './cmp/bi-footer/bi-footer.component';
 import { BiLayoutComponent } from './cmp/bi-layout/bi-layout.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NgbtNavbarComponent } from './cmp/ngbt-navbar/ngbt-navbar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './pages/home/home.component';
     BiHeaderDefaultComponent,
     BiFooterComponent,
     BiLayoutComponent,
-    HomeComponent
+    HomeComponent,
+    NgbtNavbarComponent
   ],
   imports: [
     BrowserModule,
